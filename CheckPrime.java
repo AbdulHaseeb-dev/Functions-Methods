@@ -13,7 +13,17 @@ public class CheckPrime {
         }
         return true;
     }
+    // calculate prime numbers in range
+    public static void isPrimeinRange (int n) {
+        for (int i=2; i<=n; i++) {
+            if (isPrime(i)) {
+                System.err.print(i + " ");
+            }
+        }
+        // System.out.println();
+    }
     public static void main(String[] args) {
-     System.out.println(isPrime(2));   
+     System.out.println(isPrime(20));  
+     isPrimeinRange(20); 
     }
 }
